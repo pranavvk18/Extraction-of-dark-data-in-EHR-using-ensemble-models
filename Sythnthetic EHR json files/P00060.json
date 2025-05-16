@@ -1,0 +1,357 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00060",
+        "name": [
+          {
+            "text": "John Smith"
+          }
+        ],
+        "gender": "male",
+        "age": 76.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Other"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "A-"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "No"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Nurse"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00060-condition1",
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "code": {
+          "text": "Myeloproliferative Neoplasms (MPNs)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Medical review indicates Myeloproliferative Neoplasms (MPNs), Hodgkin's Lymphoma. Blood test findings: WBC=160.5, Hemoglobin=10.1, Platelets=384.4. Further monitoring required as soon as possible."
+          }
+        ],
+        "previousCancer": "No",
+        "symptoms": "['Fatigue']",
+        "duration": 10.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00060-condition2",
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "code": {
+          "text": "Hodgkin's Lymphoma"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Medical review indicates Myeloproliferative Neoplasms (MPNs), Hodgkin's Lymphoma. Blood test findings: WBC=160.5, Hemoglobin=10.1, Platelets=384.4. Further monitoring required as soon as possible."
+          }
+        ],
+        "previousCancer": "No",
+        "symptoms": "['Fatigue']",
+        "duration": 10.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": 29.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": 5.4,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": 4.4,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": 12.5,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": 33.3,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": 143.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": 41.9,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": 45.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00060-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "valueQuantity": {
+          "value": 93.5,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00060-proc1",
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Radiation Therapy"
+        },
+        "performedDateTime": "2024-01-18",
+        "outcome": {
+          "text": "relapse"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Never smoked",
+          "socialAlcoholConsumption": "Occasional",
+          "socialExerciseHabits": "Sedentary"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00060-ci",
+        "subject": {
+          "reference": "Patient/P00060"
+        },
+        "description": "Medical review indicates Myeloproliferative Neoplasms (MPNs), Hodgkin's Lymphoma. Blood test findings: WBC=160.5, Hemoglobin=10.1, Platelets=384.4. Further monitoring required as soon as possible. Side effects: Fatigue, Nausea, Hair Loss",
+        "relapse": "Yes",
+        "timeToRelapse": 31.0,
+        "survivalStatus": "Alive",
+        "lastFollowUp": "2023-01-20",
+        "cancerType": "unknown",
+        "cancerYear": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Cytarabine']",
+          "dosage": "['100mg']",
+          "frequency": "['Once/day']"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00008",
+        "name": [
+          {
+            "text": "John Smith"
+          }
+        ],
+        "gender": "female",
+        "age": 33.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Asian"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "B-"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "Yes"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Student"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00008-condition1",
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "code": {
+          "text": "Multiple Myeloma"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Multiple Myeloma detected. Observed lab values: WBC: 183.3, Hemoglobin: 14.6, Platelets: 153.3. Next review as soon as possible."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Weight Loss']",
+        "duration": 22.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": 30.7,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": 5.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": 4.4,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": 11.1,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": 53.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": 102.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": 23.2,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": 50.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00008-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "valueQuantity": {
+          "value": 92.3,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00008-proc1",
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Targeted Therapy"
+        },
+        "performedDateTime": "2024-02-21",
+        "outcome": {
+          "text": "progressive disease"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Current smoker",
+          "socialAlcoholConsumption": "Occasional",
+          "socialExerciseHabits": "Moderate"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00008-ci",
+        "subject": {
+          "reference": "Patient/P00008"
+        },
+        "description": "Multiple Myeloma detected. Observed lab values: WBC: 183.3, Hemoglobin: 14.6, Platelets: 153.3. Next review as soon as possible. Side effects: Hair Loss, Fatigue, Infections",
+        "relapse": "No",
+        "timeToRelapse": "unknown",
+        "survivalStatus": "Deceased",
+        "lastFollowUp": "2023-06-23",
+        "cancerType": "Multiple Myeloma",
+        "cancerYear": 2012.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Ibrutinib']",
+          "dosage": "['420mg']",
+          "frequency": "['Once/day']"
+        }
+      }
+    }
+  ]
+}

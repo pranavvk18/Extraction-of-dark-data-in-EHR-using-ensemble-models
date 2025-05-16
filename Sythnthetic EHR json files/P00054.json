@@ -1,0 +1,357 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00054",
+        "name": [
+          {
+            "text": "Sophia Martinez"
+          }
+        ],
+        "gender": "male",
+        "age": 74.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Caucasian"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "A+"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "Yes"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Student"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00054-condition1",
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "code": {
+          "text": "Hodgkin's Lymphoma"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Diagnosis: Hodgkin's Lymphoma, Myelodysplastic Syndromes (MDS). Bloodwork reveals WBC: 186.9, Hemoglobin: 11.2, Platelets: 35.2. Patient advised to return as soon as possible."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Weight Loss']",
+        "duration": 1.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00054-condition2",
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "code": {
+          "text": "Myelodysplastic Syndromes (MDS)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Diagnosis: Hodgkin's Lymphoma, Myelodysplastic Syndromes (MDS). Bloodwork reveals WBC: 186.9, Hemoglobin: 11.2, Platelets: 35.2. Patient advised to return as soon as possible."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Weight Loss']",
+        "duration": 1.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": 35.5,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": 12.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": 4.3,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": 16.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": 48.4,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": 184.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": 23.3,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": 55.5,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00054-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "valueQuantity": {
+          "value": 97.7,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00054-proc1",
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Stem Cell Transplantation"
+        },
+        "performedDateTime": "2024-02-19",
+        "outcome": {
+          "text": "under palliative care"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Current smoker",
+          "socialAlcoholConsumption": "unknown",
+          "socialExerciseHabits": "Moderate"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00054-ci",
+        "subject": {
+          "reference": "Patient/P00054"
+        },
+        "description": "Diagnosis: Hodgkin's Lymphoma, Myelodysplastic Syndromes (MDS). Bloodwork reveals WBC: 186.9, Hemoglobin: 11.2, Platelets: 35.2. Patient advised to return as soon as possible. Side effects: Nausea, Hair Loss",
+        "relapse": "No",
+        "timeToRelapse": "unknown",
+        "survivalStatus": "Alive",
+        "lastFollowUp": "2022-12-23",
+        "cancerType": "Leukemia",
+        "cancerYear": 2004.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Ibrutinib']",
+          "dosage": "['420mg']",
+          "frequency": "['Once/day']"
+        }
+      }
+    }
+  ]
+}

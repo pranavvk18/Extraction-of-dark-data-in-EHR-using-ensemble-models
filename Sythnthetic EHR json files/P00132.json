@@ -1,0 +1,334 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00132",
+        "name": [
+          {
+            "text": "David Lee"
+          }
+        ],
+        "gender": "male",
+        "age": 53.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Caucasian"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "O+"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "Yes"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Manager"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00132-condition1",
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "code": {
+          "text": "Chronic Myeloid Leukemia (CML)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "The patient shows signs of Chronic Myeloid Leukemia (CML). Latest test results - WBC: 11.0, Hemoglobin: 11.8, Platelets: 71.6. Follow-up scheduled next year."
+          }
+        ],
+        "previousCancer": "No",
+        "symptoms": "['Bone Pain', 'Night Sweats']",
+        "duration": 4.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": 38.1,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": 18.7,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": 4.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": 13.2,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": 33.1,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": 204.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": 22.2,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": 49.5,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00132-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "valueQuantity": {
+          "value": 82.4,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00132-proc1",
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Radiation Therapy"
+        },
+        "performedDateTime": "2024-07-18",
+        "outcome": {
+          "text": "stable disease"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Never smoked",
+          "socialAlcoholConsumption": "Regular",
+          "socialExerciseHabits": "Moderate"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00132-ci",
+        "subject": {
+          "reference": "Patient/P00132"
+        },
+        "description": "The patient shows signs of Chronic Myeloid Leukemia (CML). Latest test results - WBC: 11.0, Hemoglobin: 11.8, Platelets: 71.6. Follow-up scheduled next year. Side effects: Nausea, Hair Loss, Infections",
+        "relapse": "Yes",
+        "timeToRelapse": 34.0,
+        "survivalStatus": "Deceased",
+        "lastFollowUp": "2023-02-19",
+        "cancerType": "unknown",
+        "cancerYear": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Methotrexate']",
+          "dosage": "['12mg']",
+          "frequency": "['Twice/week']"
+        }
+      }
+    }
+  ]
+}

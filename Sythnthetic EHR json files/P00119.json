@@ -1,0 +1,357 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00119",
+        "name": [
+          {
+            "text": "Emma Johnson"
+          }
+        ],
+        "gender": "male",
+        "age": 83.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Caucasian"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "A-"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "No"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Doctor"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00119-condition1",
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "code": {
+          "text": "Hodgkin's Lymphoma"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Diagnosis: Hodgkin's Lymphoma, Chronic Lymphocytic Leukemia (CLL). Bloodwork reveals WBC: 51.9, Hemoglobin: 10.6, Platelets: 268.9. Patient advised to return in 3 months."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Fever', 'Night Sweats', 'Bone Pain']",
+        "duration": 21.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00119-condition2",
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "code": {
+          "text": "Chronic Lymphocytic Leukemia (CLL)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Diagnosis: Hodgkin's Lymphoma, Chronic Lymphocytic Leukemia (CLL). Bloodwork reveals WBC: 51.9, Hemoglobin: 10.6, Platelets: 268.9. Patient advised to return in 3 months."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Fever', 'Night Sweats', 'Bone Pain']",
+        "duration": 21.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": 34.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": 12.3,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": 5.9,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": 11.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": 32.9,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": 198.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": 31.9,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": 70.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00119-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "valueQuantity": {
+          "value": 87.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00119-proc1",
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Radiation Therapy"
+        },
+        "performedDateTime": "2024-11-10",
+        "outcome": {
+          "text": "stable disease"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Former smoker",
+          "socialAlcoholConsumption": "Regular",
+          "socialExerciseHabits": "Sedentary"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00119-ci",
+        "subject": {
+          "reference": "Patient/P00119"
+        },
+        "description": "Diagnosis: Hodgkin's Lymphoma, Chronic Lymphocytic Leukemia (CLL). Bloodwork reveals WBC: 51.9, Hemoglobin: 10.6, Platelets: 268.9. Patient advised to return in 3 months. Side effects: Nausea",
+        "relapse": "No",
+        "timeToRelapse": "unknown",
+        "survivalStatus": "Alive",
+        "lastFollowUp": "2024-01-21",
+        "cancerType": "Leukemia",
+        "cancerYear": 1996.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Rituximab']",
+          "dosage": "['375mg/m\u00b2']",
+          "frequency": "['Weekly']"
+        }
+      }
+    }
+  ]
+}

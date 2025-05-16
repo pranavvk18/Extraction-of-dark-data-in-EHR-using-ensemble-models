@@ -1,0 +1,357 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00111",
+        "name": [
+          {
+            "text": "Emma Johnson"
+          }
+        ],
+        "gender": "female",
+        "age": 59.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Caucasian"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "B+"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "Yes"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Teacher"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00111-condition1",
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "code": {
+          "text": "Myeloproliferative Neoplasms (MPNs)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Myeloproliferative Neoplasms (MPNs), Chronic Lymphocytic Leukemia (CLL) detected. Observed lab values: WBC: 46.2, Hemoglobin: 6.2, Platelets: 62.1. Next review in 3 months."
+          }
+        ],
+        "previousCancer": "No",
+        "symptoms": "['Fever']",
+        "duration": 11.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00111-condition2",
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "code": {
+          "text": "Chronic Lymphocytic Leukemia (CLL)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Myeloproliferative Neoplasms (MPNs), Chronic Lymphocytic Leukemia (CLL) detected. Observed lab values: WBC: 46.2, Hemoglobin: 6.2, Platelets: 62.1. Next review in 3 months."
+          }
+        ],
+        "previousCancer": "No",
+        "symptoms": "['Fever']",
+        "duration": 11.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": 6.4,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": 9.4,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": 4.1,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": 14.2,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": 30.1,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": 129.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": 37.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": 48.5,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00111-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "valueQuantity": {
+          "value": 98.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00111-proc1",
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Stem Cell Transplantation"
+        },
+        "performedDateTime": "2024-01-18",
+        "outcome": {
+          "text": "remission"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Current smoker",
+          "socialAlcoholConsumption": "unknown",
+          "socialExerciseHabits": "Active"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00111-ci",
+        "subject": {
+          "reference": "Patient/P00111"
+        },
+        "description": "Myeloproliferative Neoplasms (MPNs), Chronic Lymphocytic Leukemia (CLL) detected. Observed lab values: WBC: 46.2, Hemoglobin: 6.2, Platelets: 62.1. Next review in 3 months. Side effects: Infections",
+        "relapse": "No",
+        "timeToRelapse": "unknown",
+        "survivalStatus": "Deceased",
+        "lastFollowUp": "2022-10-17",
+        "cancerType": "unknown",
+        "cancerYear": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Lenalidomide']",
+          "dosage": "['25mg']",
+          "frequency": "['Once/day']"
+        }
+      }
+    }
+  ]
+}

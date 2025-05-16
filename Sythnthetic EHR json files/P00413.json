@@ -1,0 +1,357 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00413",
+        "name": [
+          {
+            "text": "James Wilson"
+          }
+        ],
+        "gender": "male",
+        "age": 59.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Asian"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "B+"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "Yes"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Engineer"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00413-condition1",
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "code": {
+          "text": "Chronic Myeloid Leukemia (CML)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "The patient shows signs of Chronic Myeloid Leukemia (CML), Multiple Myeloma. Latest test results - WBC: 161.5, Hemoglobin: 10.1, Platelets: 43.4. Follow-up scheduled in 3 months."
+          }
+        ],
+        "previousCancer": "No",
+        "symptoms": "['Night Sweats', 'Fever', 'Bone Pain']",
+        "duration": 2.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00413-condition2",
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "code": {
+          "text": "Multiple Myeloma"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "The patient shows signs of Chronic Myeloid Leukemia (CML), Multiple Myeloma. Latest test results - WBC: 161.5, Hemoglobin: 10.1, Platelets: 43.4. Follow-up scheduled in 3 months."
+          }
+        ],
+        "previousCancer": "No",
+        "symptoms": "['Night Sweats', 'Fever', 'Bone Pain']",
+        "duration": 2.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": 2.3,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": 9.7,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": 6.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": 8.7,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": 51.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": 287.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": 18.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": 47.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00413-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "valueQuantity": {
+          "value": 91.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00413-proc1",
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Chemotherapy"
+        },
+        "performedDateTime": "2024-06-08",
+        "outcome": {
+          "text": "progressive disease"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Current smoker",
+          "socialAlcoholConsumption": "Occasional",
+          "socialExerciseHabits": "Sedentary"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00413-ci",
+        "subject": {
+          "reference": "Patient/P00413"
+        },
+        "description": "The patient shows signs of Chronic Myeloid Leukemia (CML), Multiple Myeloma. Latest test results - WBC: 161.5, Hemoglobin: 10.1, Platelets: 43.4. Follow-up scheduled in 3 months. Side effects: Infections, Fatigue, Nausea",
+        "relapse": "Yes",
+        "timeToRelapse": 13.0,
+        "survivalStatus": "Alive",
+        "lastFollowUp": "2023-07-10",
+        "cancerType": "unknown",
+        "cancerYear": "unknown"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Methotrexate']",
+          "dosage": "['12mg']",
+          "frequency": "['Twice/week']"
+        }
+      }
+    }
+  ]
+}

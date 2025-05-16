@@ -1,0 +1,357 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00333",
+        "name": [
+          {
+            "text": "David Lee"
+          }
+        ],
+        "gender": "male",
+        "age": 54.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Asian"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "A-"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "No"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Manager"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00333-condition1",
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "code": {
+          "text": "Acute Myeloid Leukemia (AML)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Acute Myeloid Leukemia (AML), Multiple Myeloma detected. Observed lab values: WBC: 185.3, Hemoglobin: 13.2, Platelets: 178.7. Next review in 3 months."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Weight Loss']",
+        "duration": 23.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00333-condition2",
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "code": {
+          "text": "Multiple Myeloma"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Acute Myeloid Leukemia (AML), Multiple Myeloma detected. Observed lab values: WBC: 185.3, Hemoglobin: 13.2, Platelets: 178.7. Next review in 3 months."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Weight Loss']",
+        "duration": 23.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": 48.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": 3.7,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": 5.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": 13.9,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": 54.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": 156.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": 18.9,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": 73.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00333-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "valueQuantity": {
+          "value": 87.2,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00333-proc1",
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Targeted Therapy"
+        },
+        "performedDateTime": "2024-08-02",
+        "outcome": {
+          "text": "stable disease"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Former smoker",
+          "socialAlcoholConsumption": "unknown",
+          "socialExerciseHabits": "Sedentary"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00333-ci",
+        "subject": {
+          "reference": "Patient/P00333"
+        },
+        "description": "Acute Myeloid Leukemia (AML), Multiple Myeloma detected. Observed lab values: WBC: 185.3, Hemoglobin: 13.2, Platelets: 178.7. Next review in 3 months. Side effects: Infections, Hair Loss",
+        "relapse": "Yes",
+        "timeToRelapse": 1.0,
+        "survivalStatus": "Alive",
+        "lastFollowUp": "2022-12-13",
+        "cancerType": "Multiple Myeloma",
+        "cancerYear": 2010.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Ibrutinib']",
+          "dosage": "['420mg']",
+          "frequency": "['Once/day']"
+        }
+      }
+    }
+  ]
+}

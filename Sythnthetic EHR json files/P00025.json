@@ -1,0 +1,357 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00025",
+        "name": [
+          {
+            "text": "John Smith"
+          }
+        ],
+        "gender": "male",
+        "age": 74.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Asian"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "AB-"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "No"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Salesperson"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00025-condition1",
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "code": {
+          "text": "Myelodysplastic Syndromes (MDS)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Myelodysplastic Syndromes (MDS), Non-Hodgkin's Lymphoma detected. Observed lab values: WBC: 20.7, Hemoglobin: 12.1, Platelets: 270.6. Next review in 3 months."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Night Sweats', 'Fatigue']",
+        "duration": 17.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00025-condition2",
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "code": {
+          "text": "Non-Hodgkin's Lymphoma"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Myelodysplastic Syndromes (MDS), Non-Hodgkin's Lymphoma detected. Observed lab values: WBC: 20.7, Hemoglobin: 12.1, Platelets: 270.6. Next review in 3 months."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Night Sweats', 'Fatigue']",
+        "duration": 17.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": 19.7,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": 17.5,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": 5.3,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": 8.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": 49.9,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": 419.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": 30.1,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": 41.2,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00025-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "valueQuantity": {
+          "value": 82.4,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00025-proc1",
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Chemotherapy"
+        },
+        "performedDateTime": "2024-10-18",
+        "outcome": {
+          "text": "relapse"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Never smoked",
+          "socialAlcoholConsumption": "Regular",
+          "socialExerciseHabits": "Active"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00025-ci",
+        "subject": {
+          "reference": "Patient/P00025"
+        },
+        "description": "Myelodysplastic Syndromes (MDS), Non-Hodgkin's Lymphoma detected. Observed lab values: WBC: 20.7, Hemoglobin: 12.1, Platelets: 270.6. Next review in 3 months. Side effects: Fatigue",
+        "relapse": "No",
+        "timeToRelapse": "unknown",
+        "survivalStatus": "Deceased",
+        "lastFollowUp": "2024-01-23",
+        "cancerType": "Leukemia",
+        "cancerYear": 2013.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Lenalidomide']",
+          "dosage": "['25mg']",
+          "frequency": "['Once/day']"
+        }
+      }
+    }
+  ]
+}

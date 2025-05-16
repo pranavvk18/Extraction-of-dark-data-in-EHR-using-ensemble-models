@@ -1,0 +1,357 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00070",
+        "name": [
+          {
+            "text": "David Lee"
+          }
+        ],
+        "gender": "female",
+        "age": 35.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Other"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "O-"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "Yes"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Manager"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00070-condition1",
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "code": {
+          "text": "Multiple Myeloma"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Multiple Myeloma, Acute Lymphoblastic Leukemia (ALL) detected. Observed lab values: WBC: 143.1, Hemoglobin: 10.3, Platelets: 275.2. Next review as soon as possible."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Bone Pain']",
+        "duration": 7.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00070-condition2",
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "code": {
+          "text": "Acute Lymphoblastic Leukemia (ALL)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Multiple Myeloma, Acute Lymphoblastic Leukemia (ALL) detected. Observed lab values: WBC: 143.1, Hemoglobin: 10.3, Platelets: 275.2. Next review as soon as possible."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Bone Pain']",
+        "duration": 7.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": 38.1,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": 9.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": 5.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": 15.5,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": 53.2,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": 439.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": 30.2,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": 51.2,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00070-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "valueQuantity": {
+          "value": 95.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00070-proc1",
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Radiation Therapy"
+        },
+        "performedDateTime": "2024-02-02",
+        "outcome": {
+          "text": "progressive disease"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Current smoker",
+          "socialAlcoholConsumption": "unknown",
+          "socialExerciseHabits": "Active"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00070-ci",
+        "subject": {
+          "reference": "Patient/P00070"
+        },
+        "description": "Multiple Myeloma, Acute Lymphoblastic Leukemia (ALL) detected. Observed lab values: WBC: 143.1, Hemoglobin: 10.3, Platelets: 275.2. Next review as soon as possible. Side effects: Nausea, Infections, Fatigue",
+        "relapse": "No",
+        "timeToRelapse": "unknown",
+        "survivalStatus": "Deceased",
+        "lastFollowUp": "2022-11-16",
+        "cancerType": "Leukemia",
+        "cancerYear": 2016.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Methotrexate']",
+          "dosage": "['12mg']",
+          "frequency": "['Twice/week']"
+        }
+      }
+    }
+  ]
+}

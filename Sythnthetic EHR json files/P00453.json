@@ -1,0 +1,357 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P00453",
+        "name": [
+          {
+            "text": "Michael Brown"
+          }
+        ],
+        "gender": "female",
+        "age": 57.0,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-ethnicity",
+            "valueString": "Caucasian"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/blood-type",
+            "valueString": "A+"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/family-history-cancer",
+            "valueString": "No"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/occupation",
+            "valueString": "Retired"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00453-condition1",
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "code": {
+          "text": "Myelodysplastic Syndromes (MDS)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Diagnosis: Myelodysplastic Syndromes (MDS), Acute Myeloid Leukemia (AML). Bloodwork reveals WBC: 65.7, Hemoglobin: 15.7, Platelets: 246.0. Patient advised to return as soon as possible."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Fatigue']",
+        "duration": 16.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "P00453-condition2",
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "code": {
+          "text": "Acute Myeloid Leukemia (AML)"
+        },
+        "clinicalStatus": {
+          "text": "active"
+        },
+        "note": [
+          {
+            "text": "Diagnosis: Myelodysplastic Syndromes (MDS), Acute Myeloid Leukemia (AML). Bloodwork reveals WBC: 65.7, Hemoglobin: 15.7, Platelets: 246.0. Patient advised to return as soon as possible."
+          }
+        ],
+        "previousCancer": "Yes",
+        "symptoms": "['Fatigue']",
+        "duration": 16.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-blast_cells",
+        "status": "final",
+        "code": {
+          "text": "blast_cells"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": 49.9,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-cell_morphology",
+        "status": "final",
+        "code": {
+          "text": "cell_morphology"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-philadelphia_chromosome",
+        "status": "final",
+        "code": {
+          "text": "philadelphia_chromosome"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-FLT3_mutation",
+        "status": "final",
+        "code": {
+          "text": "FLT3_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-TP53_mutation",
+        "status": "final",
+        "code": {
+          "text": "TP53_mutation"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": null,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-lab_WBC",
+        "status": "final",
+        "code": {
+          "text": "lab_WBC"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": 3.8,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-lab_RBC",
+        "status": "final",
+        "code": {
+          "text": "lab_RBC"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": 5.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-lab_Hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "lab_Hemoglobin"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": 8.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-lab_Hematocrit",
+        "status": "final",
+        "code": {
+          "text": "lab_Hematocrit"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": 49.7,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-lab_Platelets",
+        "status": "final",
+        "code": {
+          "text": "lab_Platelets"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": 220.0,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-lab_Lymphocyte %",
+        "status": "final",
+        "code": {
+          "text": "lab_Lymphocyte %"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": 44.5,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-lab_Neutrophil %",
+        "status": "final",
+        "code": {
+          "text": "lab_Neutrophil %"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": 52.6,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "P00453-lab_MCV",
+        "status": "final",
+        "code": {
+          "text": "lab_MCV"
+        },
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "valueQuantity": {
+          "value": 80.1,
+          "unit": "unit"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "P00453-proc1",
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "status": "completed",
+        "code": {
+          "text": "Targeted Therapy"
+        },
+        "performedDateTime": "2024-03-01",
+        "outcome": {
+          "text": "progressive disease"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "SocialHabits",
+        "content": {
+          "socialSmoking": "Never smoked",
+          "socialAlcoholConsumption": "unknown",
+          "socialExerciseHabits": "Active"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "P00453-ci",
+        "subject": {
+          "reference": "Patient/P00453"
+        },
+        "description": "Diagnosis: Myelodysplastic Syndromes (MDS), Acute Myeloid Leukemia (AML). Bloodwork reveals WBC: 65.7, Hemoglobin: 15.7, Platelets: 246.0. Patient advised to return as soon as possible. Side effects: Hair Loss, Infections, Nausea",
+        "relapse": "Yes",
+        "timeToRelapse": 34.0,
+        "survivalStatus": "Deceased",
+        "lastFollowUp": "2023-03-20",
+        "cancerType": "Multiple Myeloma",
+        "cancerYear": 1997.0
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "content": {
+          "name": "['Rituximab']",
+          "dosage": "['375mg/m\u00b2']",
+          "frequency": "['Weekly']"
+        }
+      }
+    }
+  ]
+}
